@@ -1,0 +1,51 @@
+/* Studio Rup Rekha - Custom Stylesheet */
+
+@keyframes slowZoom {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.06); }
+  100% { transform: scale(1); }
+}
+
+.animate-slow-zoom {
+  animation: slowZoom 24s ease-in-out infinite alternate;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0d0f12;
+}
+::-webkit-scrollbar-thumb {
+  background: #2a303c;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #d4af37;
+}
+
+/* Image comparison styling */
+#compareContainer {
+  position: relative;
+  user-select: none;
+  touch-action: none;
+}
+
+#compareSliderHandle {
+  pointer-events: none;
+  transition: transform 0.05s ease-out;
+}
+
+.nav-link.active {
+  color: #fbbf24;
+  background-color: rgba(251, 191, 36, 0.1);
+}
+
+.gallery-item {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.gallery-item.hidden-item {
+  display: none !important;
+}
