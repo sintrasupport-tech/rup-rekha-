@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Studio Rup Rekha | स्टूडियो रूप रेखा - Premier Photography Studio in Purnia, Bihar</title>
+  <meta name="description" content="Studio Rup Rekha (स्टूडियो रूप रेखा) - Leading professional photography studio at Kali Badi Chowk, Near Bhatta Bazar, Purnia, Bihar. Portraits, weddings, events, photo restoration & custom framing. Call 091134 30237.">
+  <meta name="keywords" content="Studio Rup Rekha, Purnia photographer, photo studio in Purnia, Bhatta Bazar photo studio, Kali Badi Chowk, Bihar photography, wedding photography Purnia, photo restoration Purnia">
+
+  <!-- Open Graph / Meta Tags -->
+  <meta property="og:title" content="Studio Rup Rekha (स्टूडियो रूप रेखा) - Photography Studio Purnia">
+  <meta property="og:description" content="Capturing your timeless moments & memories. Professional portraits, wedding shoots, event coverage & restoration in Purnia, Bihar.">
+  <meta property="og:type" content="website">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              gold: '#D4AF37',
+              goldLight: '#F3E5AB',
+              goldDark: '#AA820A',
+              dark: '#0D0F12',
+              card: '#161920',
+              accent: '#E0A93B'
+            }
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            devanagari: ['"Rozha One"', '"Noto Sans Devanagari"', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Rozha+One&display=swap" rel="stylesheet">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-[#0c0e12] text-slate-100 font-sans antialiased selection:bg-amber-500/30 selection:text-amber-300">
+
+  <!-- Top Announcement / Quick Info Bar -->
+  <div class="bg-gradient-to-r from-neutral-900 via-neutral-800 to-neutral-900 border-b border-neutral-800 text-xs md:text-sm py-2 px-4">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center space-x-4 text-neutral-300">
+        <span class="flex items-center gap-1.5">
+          <i data-lucide="map-pin" class="w-3.5 h-3.5 text-amber-400"></i>
+          <span>Kali Badi Chowk, Near Bhatta Bazar, Purnia, Bihar</span>
+        </span>
+        <span class="hidden sm:inline-block text-neutral-600">•</span>
+        <span class="hidden sm:flex items-center gap-1.5 text-neutral-400">
+          <i data-lucide="navigation" class="w-3.5 h-3.5 text-amber-400"></i>
+          <span>Plus Code: <strong class="text-neutral-200">QFCH+C2 Purnia</strong></span>
+        </span>
+      </div>
+
+      <div class="flex items-center space-x-4">
+        <!-- Dynamic Live Status Badge -->
+        <div id="liveStatusBadge" class="flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          <span id="liveStatusText">Open · Closes 7:00 PM</span>
+        </div>
+
+        <a href="tel:09113430237" class="flex items-center gap-1 text-amber-400 hover:text-amber-300 font-medium transition-colors">
+          <i data-lucide="phone-call" class="w-3.5 h-3.5"></i>
+          <span>091134 30237</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header / Navigation Bar -->
+  <header class="sticky top-0 z-40 backdrop-blur-md bg-[#0d0f14]/90 border-b border-neutral-800 transition-all duration-300" id="navbar">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Brand / Logo -->
+        <a href="#home" class="flex items-center gap-3 group">
+          <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-amber-600 via-amber-400 to-amber-200 p-[1px] shadow-lg shadow-amber-500/10">
+            <div class="w-full h-full bg-neutral-950 rounded-[11px] flex items-center justify-center group-hover:bg-neutral-900 transition-colors">
+              <i data-lucide="camera" class="w-6 h-6 text-amber-400 group-hover:scale-110 transition-transform duration-300"></i>
+            </div>
+          </div>
+          <div class="flex flex-col">
+            <span class="text-xl sm:text-2xl font-bold tracking-tight font-serif text-white group-hover:text-amber-300 transition-colors">
+              Studio Rup Rekha
+            </span>
+            <span class="text-xs text-amber-400/90 font-medium tracking-wider -mt-1 font-devanagari">
+              स्टूडियो रूप रेखा • पूर्णिया
+            </span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden md:flex items-center space-x-1 lg:space-x-2">
+          <a href="#home" class="nav-link px-3 py-2 text-sm font-medium text-neutral-200 hover:text-amber-400 rounded-md transition-colors">Home</a>
+          <a href="#services" class="nav-link px-3 py-2 text-sm font-medium text-neutral-300 hover:text-amber-400 rounded-md transition-colors">Services</a>
+          <a href="#gallery" class="nav-link px-3 py-2 text-sm font-medium text-neutral-300 hover:text-amber-400 rounded-md transition-colors">Gallery</a>
+          <a href="#restoration" class="nav-link px-3 py-2 text-sm font-medium text-neutral-300 hover:text-amber-400 rounded-md transition-colors">Restoration</a>
+          <a href="#about" class="nav-link px-3 py-2 text-sm font-medium text-neutral-300 hover:text-amber-400 rounded-md transition-colors">About Us</a>
+          <a href="#location" class="nav-link px-3 py-2 text-sm font-medium text-neutral-300 hover:text-amber-400 rounded-md transition-colors">Location & Hours</a>
+        </nav>
+
+        <!-- Header CTA Buttons -->
+        <div class="hidden lg:flex items-center space-x-3">
+          <a href="tel:09113430237" class="inline-flex items-center gap-2 px-4 py-2.5 text-sm font-semibold text-neutral-900 bg-gradient-to-r from-amber-400 to-amber-500 hover:from-amber-300 hover:to-amber-400 rounded-lg shadow-md hover:shadow-amber-500/20 transition-all duration-200 transform active:scale-95">
+            <i data-lucide="phone" class="w-4 h-4 text-neutral-900"></i>
+            <span>091134 30237</span>
+          </a>
+          <a href="#contact" class="inline-flex items-center gap-2 px-4 py-2.5 text-sm font-medium text-amber-400 border border-amber-500/40 hover:bg-amber-400/10 rounded-lg transition-colors">
+            <span>Book Session</span>
+          </a>
+        </div>
+
+        <!-- Mobile Hamburger Button -->
+        <div class="flex md:hidden items-center gap-2">
+          <a href="tel:09113430237" class="p-2 rounded-lg bg-amber-500 text-neutral-950 font-bold" title="Call Now">
+            <i data-lucide="phone" class="w-5 h-5"></i>
+          </a>
+          <button id="mobileMenuBtn" type="button" class="p-2 rounded-lg text-neutral-400 hover:text-white hover:bg-neutral-800 focus:outline-none" aria-label="Toggle navigation">
+            <i data-lucide="menu" id="menuIcon" class="w-6 h-6"></i>
+            <i data-lucide="x" id="closeIcon" class="w-6 h-6 hidden"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobileMenu" class="hidden md:hidden border-b border-neutral-800 bg-[#12151c]/95 backdrop-blur-xl px-4 pt-3 pb-6 space-y-2">
+      <a href="#home" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-base font-medium text-neutral-200 hover:bg-neutral-800 hover:text-amber-400">Home</a>
+      <a href="#services" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-base font-medium text-neutral-200 hover:bg-neutral-800 hover:text-amber-400">Services</a>
+      <a href="#gallery" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-base font-medium text-neutral-200 hover:bg-neutral-800 hover:text-amber-400">Portfolio Gallery</a>
+      <a href="#restoration" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-base font-medium text-neutral-200 hover:bg-neutral-800 hover:text-amber-400">Photo Restoration</a>
+      <a href="#about" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-base font-medium text-neutral-200 hover:bg-neutral-800 hover:text-amber-400">About Studio</a>
+      <a href="#location" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-base font-medium text-neutral-200 hover:bg-neutral-800 hover:text-amber-400">Location & Timing</a>
+      <a href="#contact" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-base font-medium text-neutral-200 hover:bg-neutral-800 hover:text-amber-400">Book an Appointment</a>
+      
+      <div class="pt-4 border-t border-neutral-800/80 flex flex-col gap-2.5">
+        <a href="tel:09113430237" class="w-full flex items-center justify-center gap-2 py-3 rounded-lg font-bold text-neutral-900 bg-amber-400 hover:bg-amber-300">
+          <i data-lucide="phone-call" class="w-4 h-4"></i>
+          <span>Call: 091134 30237</span>
+        </a>
+        <a href="https://maps.google.com/?q=QFCH%2BC2+Purnia,+Bihar" target="_blank" rel="noopener noreferrer" class="w-full flex items-center justify-center gap-2 py-3 rounded-lg font-medium text-amber-300 border border-amber-500/30 hover:bg-amber-500/10">
+          <i data-lucide="map" class="w-4 h-4"></i>
+          <span>Get Directions</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="relative min-h-[90vh] flex items-center justify-center overflow-hidden py-16 lg:py-24">
+    <div class="absolute inset-0 z-0">
+      <img src="https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=2000&auto=format&fit=crop" 
+           alt="Studio Rup Rekha Photography Atmosphere" 
+           class="w-full h-full object-cover object-center opacity-25 filter brightness-75 scale-105 transform animate-slow-zoom">
+      <div class="absolute inset-0 bg-gradient-to-t from-[#0c0e12] via-[#0c0e12]/80 to-transparent"></div>
+      <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-amber-500/10 via-transparent to-transparent"></div>
+    </div>
+
+    <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-neutral-900/90 border border-amber-500/30 text-amber-300 text-xs sm:text-sm font-medium mb-6 shadow-xl backdrop-blur-md">
+        <i data-lucide="sparkles" class="w-4 h-4 text-amber-400"></i>
+        <span>Professional Photography Studio • Bhatta Bazar, Purnia</span>
+      </div>
+
+      <h1 class="text-4xl sm:text-6xl lg:text-7xl font-bold font-serif tracking-tight text-white leading-tight mb-6">
+        Capturing Timeless Moments & <br class="hidden sm:inline">
+        <span class="bg-gradient-to-r from-amber-200 via-amber-400 to-yellow-500 bg-clip-text text-transparent italic">
+          Cherished Memories
+        </span>
+      </h1>
+
+      <p class="text-base sm:text-xl text-neutral-300 max-w-3xl mx-auto font-light leading-relaxed mb-4">
+        Welcome to <strong class="text-white font-semibold">Studio Rup Rekha (स्टूडियो रूप रेखा)</strong> — your trusted neighborhood destination in Purnia for fine portraiture, wedding photography, family milestones, and master photo restoration.
+      </p>
+
+      <p class="text-xs sm:text-sm text-neutral-400 mb-8 flex items-center justify-center gap-2">
+        <i data-lucide="map-pin" class="w-4 h-4 text-amber-400 inline"></i>
+        <span>Kali Badi Chowk, Near Bhatta Bazar, Purnia, Bihar 854301</span>
+      </p>
+
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-5">
+        <a href="tel:09113430237" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 text-base font-bold text-neutral-950 bg-gradient-to-r from-amber-400 via-amber-300 to-amber-400 hover:from-amber-300 hover:to-amber-200 rounded-xl shadow-lg shadow-amber-500/25 hover:shadow-amber-500/40 transform hover:-translate-y-0.5 transition-all duration-200">
+          <i data-lucide="phone-call" class="w-5 h-5"></i>
+          <span>Call Now to Book (091134 30237)</span>
+        </a>
+
+        <a href="https://maps.google.com/?q=QFCH%2BC2+Purnia,+Bihar" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-7 py-4 text-base font-semibold text-neutral-100 bg-neutral-900/90 hover:bg-neutral-800 border border-neutral-700 hover:border-amber-400/50 rounded-xl transition-all duration-200 backdrop-blur-md">
+          <i data-lucide="navigation" class="w-5 h-5 text-amber-400"></i>
+          <span>Get Directions (Map)</span>
+        </a>
+
+        <a href="https://wa.me/919113430237?text=Hello%20Studio%20Rup%20Rekha,%20I%20would%20like%20to%20inquire%20about%20a%20photoshoot%20session." target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-6 py-4 text-base font-semibold text-emerald-400 bg-emerald-950/40 hover:bg-emerald-900/50 border border-emerald-500/40 rounded-xl transition-all duration-200">
+          <i data-lucide="message-circle" class="w-5 h-5"></i>
+          <span>WhatsApp Chat</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-20 bg-[#0f1217] relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-amber-400 font-semibold text-sm tracking-wider uppercase">Our Photography Offerings</span>
+        <h2 class="text-3xl sm:text-5xl font-bold font-serif text-white mt-2 mb-4">
+          Professional Services Crafted With Passion
+        </h2>
+        <p class="text-neutral-400 text-base sm:text-lg">
+          From heartfelt family portraits to cinematic wedding celebrations, we blend studio lighting artistry with timeless photography.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Service Card 1 -->
+        <div class="group bg-neutral-900/70 border border-neutral-800 hover:border-amber-500/50 rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-amber-500/5 flex flex-col justify-between">
+          <div>
+            <div class="relative h-52 rounded-xl overflow-hidden mb-5">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=800&auto=format&fit=crop" alt="Portrait Photography" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <span class="absolute bottom-3 left-3 bg-amber-500/90 text-neutral-950 text-xs font-bold px-2.5 py-1 rounded-md">Studio Classic</span>
+            </div>
+            <h3 class="text-xl font-bold font-serif text-white group-hover:text-amber-300 transition-colors mb-2">Studio & Individual Portraits</h3>
+            <p class="text-neutral-400 text-sm leading-relaxed mb-4">Professional studio headshots, modeling portfolios, matrimonial photos, and expressive individual portraits.</p>
+          </div>
+          <a href="tel:09113430237" class="inline-flex items-center justify-center gap-2 w-full py-2.5 text-sm font-semibold rounded-lg bg-neutral-800 text-amber-300 hover:bg-amber-400 hover:text-neutral-950 transition-colors">
+            <span>Inquire for Portraits</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+        <!-- Service Card 2 -->
+        <div class="group bg-neutral-900/70 border border-neutral-800 hover:border-amber-500/50 rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-amber-500/5 flex flex-col justify-between">
+          <div>
+            <div class="relative h-52 rounded-xl overflow-hidden mb-5">
+              <img src="https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=800&auto=format&fit=crop" alt="Wedding Photography" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <span class="absolute bottom-3 left-3 bg-amber-500/90 text-neutral-950 text-xs font-bold px-2.5 py-1 rounded-md">Popular Choice</span>
+            </div>
+            <h3 class="text-xl font-bold font-serif text-white group-hover:text-amber-300 transition-colors mb-2">Wedding & Pre-Wedding Coverage</h3>
+            <p class="text-neutral-400 text-sm leading-relaxed mb-4">Comprehensive wedding coverage including Haldi, Mehndi, Sangeet, Jaimala, and receptions.</p>
+          </div>
+          <a href="tel:09113430237" class="inline-flex items-center justify-center gap-2 w-full py-2.5 text-sm font-semibold rounded-lg bg-neutral-800 text-amber-300 hover:bg-amber-400 hover:text-neutral-950 transition-colors">
+            <span>Book Wedding Shoot</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+        <!-- Service Card 3 -->
+        <div class="group bg-neutral-900/70 border border-neutral-800 hover:border-amber-500/50 rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-amber-500/5 flex flex-col justify-between">
+          <div>
+            <div class="relative h-52 rounded-xl overflow-hidden mb-5">
+              <img src="https://images.unsplash.com/photo-1609220136736-443140cffec6?q=80&w=800&auto=format&fit=crop" alt="Family Portraits" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <span class="absolute bottom-3 left-3 bg-amber-500/90 text-neutral-950 text-xs font-bold px-2.5 py-1 rounded-md">Cherished Moments</span>
+            </div>
+            <h3 class="text-xl font-bold font-serif text-white group-hover:text-amber-300 transition-colors mb-2">Family & Group Portraits</h3>
+            <p class="text-neutral-400 text-sm leading-relaxed mb-4">Warm multigenerational family portraits, festive gatherings, and maternity shoots.</p>
+          </div>
+          <a href="tel:09113430237" class="inline-flex items-center justify-center gap-2 w-full py-2.5 text-sm font-semibold rounded-lg bg-neutral-800 text-amber-300 hover:bg-amber-400 hover:text-neutral-950 transition-colors">
+            <span>Book Family Session</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Photo Restoration Interactive Showcase Section -->
+  <section id="restoration" class="py-20 bg-[#0e1117] border-y border-neutral-800/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div class="lg:col-span-5">
+          <span class="text-amber-400 font-semibold text-sm tracking-wider uppercase">Heritage Preservation</span>
+          <h2 class="text-3xl sm:text-4xl font-bold font-serif text-white mt-2 mb-4">Master Photo Restoration</h2>
+          <p class="text-neutral-300 text-sm sm:text-base leading-relaxed mb-6">
+            Bring old, torn, faded, or black-and-white ancestral photographs back to life with advanced digital restoration and natural colorization.
+          </p>
+          <a href="https://wa.me/919113430237?text=Hello%20Studio%20Rup%20Rekha,%20I%20have%20an%20old%20photo%20to%20restore." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl font-bold bg-amber-400 text-neutral-950 hover:bg-amber-300 transition-all">
+            <i data-lucide="upload" class="w-4 h-4"></i>
+            <span>Send Photo on WhatsApp for Quote</span>
+          </a>
+        </div>
+
+        <div class="lg:col-span-7">
+          <div class="bg-neutral-900 border border-neutral-800 rounded-2xl p-4 sm:p-6 shadow-2xl">
+            <div class="relative w-full h-80 sm:h-96 rounded-xl overflow-hidden select-none border border-neutral-700/60" id="compareContainer">
+              <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1000&auto=format&fit=crop" alt="Restored" class="absolute inset-0 w-full h-full object-cover">
+              <div class="absolute inset-0 overflow-hidden w-1/2" id="compareBeforeWrapper">
+                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1000&auto=format&fit=crop" alt="Damaged Original" class="absolute inset-0 w-full h-full object-cover filter grayscale contrast-125 sepia brightness-75">
+                <div class="absolute top-4 left-4 bg-neutral-950/80 text-neutral-200 text-xs font-bold px-3 py-1 rounded-md border border-neutral-700">BEFORE</div>
+              </div>
+              <div class="absolute top-4 right-4 bg-amber-500 text-neutral-950 text-xs font-bold px-3 py-1 rounded-md">AFTER</div>
+              <div class="absolute top-0 bottom-0 w-1 bg-amber-400 flex items-center justify-center -ml-0.5" id="compareSliderHandle" style="left: 50%;">
+                <div class="w-8 h-8 rounded-full bg-amber-400 text-neutral-950 flex items-center justify-center shadow-lg border-2 border-white">
+                  <i data-lucide="chevrons-left-right" class="w-4 h-4"></i>
+                </div>
+              </div>
+              <input type="range" min="0" max="100" value="50" class="absolute inset-0 w-full h-full opacity-0 cursor-ew-resize z-20" id="compareRange">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location & Hours Section -->
+  <section id="location" class="py-20 bg-[#0f1217]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-amber-400 font-semibold text-sm tracking-wider uppercase">Find Our Studio</span>
+        <h2 class="text-3xl sm:text-5xl font-bold font-serif text-white mt-2 mb-4">Visit Us in Purnia, Bihar</h2>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+        <div class="lg:col-span-5 bg-neutral-900/80 border border-neutral-800 rounded-2xl p-6 sm:p-8">
+          <div class="p-4 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-between mb-6">
+            <span class="text-sm font-bold text-emerald-400" id="hoursDetailText">Open Daily · Closes at 7:00 PM</span>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-2">Studio Address</h3>
+          <p class="text-neutral-300 text-sm">Kali badi chowk, Near, Bhatta Bazar, Purnia, Bihar 854301</p>
+          <p class="text-xs text-amber-400 font-semibold mt-1 mb-6">Plus Code: QFCH+C2 Purnia, Bihar</p>
+          <a href="https://maps.google.com/?q=QFCH%2BC2+Purnia,+Bihar" target="_blank" rel="noopener noreferrer" class="w-full flex items-center justify-center gap-2 py-3.5 rounded-xl font-bold bg-amber-400 text-neutral-950 hover:bg-amber-300 transition-all">
+            <i data-lucide="navigation" class="w-4 h-4"></i>
+            <span>Get Directions in Google Maps</span>
+          </a>
+        </div>
+
+        <div class="lg:col-span-7 bg-neutral-900 border border-neutral-800 rounded-2xl overflow-hidden min-h-[350px]">
+          <iframe title="Studio Location Map" src="https://maps.google.com/maps?q=Bhatta+Bazar+Purnia+Bihar+854301&t=&z=16&ie=UTF8&iwloc=&output=embed" class="w-full h-full min-h-[350px] border-0" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-neutral-950 border-t border-neutral-800 text-neutral-400 py-10">
+    <div class="max-w-7xl mx-auto px-4 text-center text-xs">
+      <p class="text-white font-serif font-bold text-lg mb-2">Studio Rup Rekha (स्टूडियो रूप रेखा)</p>
+      <p class="text-neutral-400 mb-2">Kali badi chowk, Near Bhatta Bazar, Purnia, Bihar 854301 | Phone: 091134 30237</p>
+      <p>© <span id="currentYear"></span> Studio Rup Rekha. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
